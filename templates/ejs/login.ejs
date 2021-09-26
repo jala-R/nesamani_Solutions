@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="Keyword" content="login">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="">
+<head>
+<style>
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background:lightblue;
+}
+
+.some
+{
+	border:1px  solid green;
+	width:300px;
+	height:200px;
+	top:30%;
+	left:40%;
+	padding:10px;
+	margin:2px;
+	position:absolute;
+	background:white;
+	border-radius:5px;
+
+}
+.some h1
+{
+	text-align:center;
+	text-decoration:underline;
+	margin-bottom:10px;
+}
+	
+.info
+{
+	padding:5px;
+	margin:2px;
+	font-size:18px;
+}
+button
+{
+	padding:10px;
+	width:100px;
+	border:1px solid gray;
+	margin-left:100px;
+}
+</style>
+<body>
+<form method="post" action="/login">
+<div class="some">
+<h1>Log In</h1>
+
+<div class="info">
+<label>Email :</label>
+<input type="email" name="email">
+<br><br>
+<label>Password :</label>
+<input type="password" name="password ">
+</div>
+
+<br>
+<button>Log in</button>
+</div>
+</form>
+
+</body>
+</html>

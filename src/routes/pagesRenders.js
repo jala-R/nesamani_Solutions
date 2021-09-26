@@ -47,4 +47,8 @@ app.get("/signup/:token",async (req,res)=>{
     }
 })
 
+app.get("/login",(req,res)=>{
+    res.render("login");
+})
+
 module.exports=app;

@@ -78,6 +78,8 @@ app.post('/emp/me/profile', upload.single('avatar'), async function (req, res) {
     }catch(e){
         res.status(404).send({error:e.message});
     }
+},(err,req,res,next)=>{
+    res.status(404).send({error:err.message});
 })
 
 //get profile pic

@@ -67,6 +67,8 @@ const employeeSchema=new mongoose.Schema({
     token:{
         type:String
     }
+},{
+    timestamps:true
 })
 employeeSchema.pre("save",async function(){
     if(this.isModified("password")){

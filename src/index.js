@@ -5,7 +5,8 @@ const express=require("express"),
     employeeRouter=require("./routes/employee"),
     cookieParser=require("cookie-parser");
     empAuth=require("./helper/emplyoeeAuth"),
-    adminRouter=require("./routes/admin");
+    adminRouter=require("./routes/admin"),
+    bodyParser=require("body-parser");
 require("./db/connectDb");
 
 
@@ -17,7 +18,8 @@ const viewPath=path.join(__dirname,"../templates/ejs");
 app.set("view engine","ejs");
 app.set("views",viewPath);
 app.use(express.static(publicPath));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(cookieParser(process.env.COOKIESIGNEDKEY));
 app.use("/emp",empAuth);
 

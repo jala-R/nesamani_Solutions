@@ -6,13 +6,14 @@
   "scripts": {
     "dev": "env-cmd -f ./configs/dev.env nodemon src/index.js",
     "start": "node src/index.js",
-    "adminPatch":"env-cmd -f ./configs/dev.env nodemon src/adminPatch.js"
+    "adminPatch": "env-cmd -f ./configs/dev.env nodemon src/adminPatch.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
     "express": "^4.17.1",

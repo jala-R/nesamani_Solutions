@@ -111,7 +111,6 @@ app.delete('/emp/me/profile', upload.single('avatar'), async function (req, res)
 app.post("/login",async (req,res)=>{
     try{
         let emp=await Employee.findOne({email:req.body.email});
-        // console.log(req.body);
         if(!emp)throw new Error("invalid credentials!");
         // console.log(emp);
         const loginResult=await emp.login(req.body.password);

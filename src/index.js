@@ -13,6 +13,7 @@ require("./db/connectDb");
 //paths
 const publicPath=path.join(__dirname,"../public");
 const viewPath=path.join(__dirname,"../templates/ejs");
+app.set('trust proxy', 1);
 
 //configs
 app.set("view engine","ejs");

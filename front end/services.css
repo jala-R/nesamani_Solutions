@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+}
+button{
+    cursor: pointer;
+}
+.title{
+    font-size: 20px;
+}
+.header{
+    background: #3c1874;
+    color: #f0f9ff;
+    padding: 10px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.menu{
+    display: none;
+}
+.list li
+{
+    margin: 8px;
+    padding: 8px;
+    font-size: 20px; 
+    display:inline-flex;
+    border-radius: 6px;
+}
+.list li.third,
+.list li:hover{
+    background: white;
+    color: black;
+}
+a{
+    color:  #f0f9ff;
+}
+.service-title {
+    padding-top: 100px;
+    text-align: center;
+    color: #576975;
+}
+.service-title p{
+    color: #57697599;
+    font-size: 15px;
+}
+.service-title h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.service-image1 img, .service-image2 img,.service-image3 img{
+    height: 90px;
+}
+.service-image1, .service-image2,.service-image3{
+    border: 1px solid white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.service-image1:hover, .service-image2:hover,.service-image3:hover{
+    box-shadow: 2px 2px 30px rgb(0 0 0 / 20%);
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% 10%;
+    gap: 35px;
+}
+.service >*{
+    text-align: center;
+}
+
+.service-image3  button
+{
+    margin-top: 50px;
+}
+.service-image2  button,.service-image1  button
+{
+    margin-top: 100px;
+}
+.service button{
+    border: 1px solid indigo;
+    padding: 10px 25px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.service h2{
+    color: #576975;
+}
+.service p{
+    color: #57697599;
+}
+.service button:hover{
+    background: indigo;
+    color: white;
+    transition: all 0.8 ease;
+}
+
+.foot  h3{
+    margin: 10px 0;
+    color: white;
+    font-weight: 600;
+}
+.foot ul li a{
+    color:  #f0f9ff;
+    font-size: small;
+
+}
+.foot ul li a:hover{
+    color: white;
+}
+footer{
+    background: #3c1874;
+}
+.foot{
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.icons
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.fab{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.copy h5{
+    padding: 10px;
+    text-align: center;
+    color: #576975;
+}
+.up a{
+    text-decoration: none;
+    color: black;
+}
+.up .fa{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+    padding: 10px;
+    background: gray;
+    border: 2px solid black;
+}
+
+@media (max-width:860px)
+{   
+    .title{ 
+        font-size: small;
+    }
+    .menu{
+        display: block;
+        justify-content: end;
+    }
+    .list{
+        display: none;
+    }
+    .service,.foot{
+        grid-template-columns: 1fr !important;
+    }
+}
+@media (max-width:960px)
+{
+    .list li{
+        font-size: 18px !important;
+    }
+    .title{
+        font-size: 16px;
+    }
+}
